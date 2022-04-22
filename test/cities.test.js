@@ -15,7 +15,7 @@ describe('GET /cities', function() {
     test('Should return an error message if no "q" parameters are sent.', async () => {
         const res = await api.get('/api/v1/cities/search')
         
-        expect(res.body.error).toBe('Falta el parametro \"q\" para realizar la consulta y no puede ser vacía');
+        expect(res.body.error).toBe('Falta el parámetro \"q\" para realizar la consulta y no puede ser vacía');
     })
 
     test('Should return an empty array if there are no results', async() => {
