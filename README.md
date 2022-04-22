@@ -45,7 +45,7 @@ localhost:3000/api/v1/cities/search
 ```sh
 localhost:3000/api/v1/cities/search?q=London
 ```
-La respuesta es una lista de las ciudades encontradas que se envió como valor en el parámetro “q” y ordenados de mayor a menor puntuación.  
+La respuesta es una lista con la data de las ciudades encontradas que se envió como valor en el parámetro “q” y ordenados de mayor a menor puntuación.  
 
 Respuesta
 
