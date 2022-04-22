@@ -27,3 +27,19 @@ Ejecutan los test de la aplicación
 ```sh
 npm run test	
 ```
+
+### Endpoint
+```sh
+localhost:3000//api/v1/cities/search
+```
+
+Parámetros a enviar
+- Obligatorio
+ 	 -- q = Nombre de la ciudad o palabra clave
+
+- Opcionales
+	 -- latitude = Latitude de la ciudad a buscar 
+	 -- longitude = Longitud de la ciudad a buscar
+
+
+
