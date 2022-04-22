@@ -38,7 +38,7 @@ localhost:3000/api/v1/cities/search
 ##### - q = Nombre de la ciudad o palabra clave
 
 #### Opcionales
-##### - latitude = Latitude de la ciudad a buscar 
+##### - latitude = Latitud de la ciudad a buscar 
 ##### - longitude = Longitud de la ciudad a buscar
 
 ### Endpoint para buscar sugerencia de ciudades 
