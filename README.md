@@ -13,8 +13,17 @@ npm install o npm i
 
 ## Comandos para ejecutar la aplicación
 
+Ejecutar la aplicación con node
 ```sh
-npm run start  	(Se ejecuta la aplicación con node)
-npm run dev   	(Se ejecuta la aplicación con nodemon)
-npm run test	(Se ejecutan los test de la aplicación)	
+npm run start
+```
+
+Ejecutar la aplicación con nodemon
+```sh
+npm run dev
+```
+
+Ejecutan los test de la aplicación
+```sh
+npm run test	
 ```
