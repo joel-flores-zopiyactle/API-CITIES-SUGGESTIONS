@@ -47,7 +47,7 @@ localhost:3000/api/v1/cities/search?q=London
 ```
 La respuesta es un array con las ciudades encontradas con el match de q y ordenados de mayor a menor puntuación. 
 
-Resultado
+Respuesta
 
 ```sh
 {
@@ -81,21 +81,50 @@ Resultado
             "latitude": "37.12898",
             "longitude": "-84.08326",
             "score": 0.2
-        },
-        {
-            "name": "New London, US",
-            "latitude": "44.39276",
-            "longitude": "-88.73983",
-            "score": 0.2
-        },
-        {
-            "name": "London, CA",
-            "latitude": "42.98339",
-            "longitude": "-81.23304",
-            "score": 0.1
         }
     ]
 }
+```
+
+Endpoint final para una búsqueda más específica con los parámetros de q, latitud y longitud
+
+```sh
+localhost:3000/api/v1/cities/search?q=Ma&latitude=45.43338&longitude=-73.16585
+```
+Respuesta 
+
+```sh
+{
+    "search": [
+        {
+            "name": "Marieville, CA",
+            "latitude": "45.43338",
+            "longitude": "-73.16585",
+            "score": 0.3
+        }
+    ]
+}
+```
+
+Si no hay resultados de la búsqueda el endpoint regresar un array vacío
+```sh
+localhost:3000/api/v1/cities/search?q=Mixtla
+```
+Respuesta 
+```sh
+{
+    "search": []
+}
+```
+
+Si no se envía el parámetro “q” en la URL recibes un respuesta con un mensaje de error
+
+Respuesta 
+
+```sh
+{
+    "error": "Falta el parámetro \"q\" para realizar la consulta y no puede ser vacía"
+} 
 
 ```
 
