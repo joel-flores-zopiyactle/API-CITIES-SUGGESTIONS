@@ -41,7 +41,7 @@ localhost:3000/api/v1/cities/search
 ##### - latitude = Latitude de la ciudad a buscar 
 ##### - longitude = Longitud de la ciudad a buscar
 
-## Endpoint para buscar sugerencia de ciudades 
+### Endpoint para buscar sugerencia de ciudades 
 ```sh
 localhost:3000/api/v1/cities/search?q=London
 ```
@@ -86,7 +86,7 @@ Respuesta
 }
 ```
 
-## Endpoint final para una búsqueda más específica con los parámetros de q, latitud y longitud
+### Endpoint final para una búsqueda más específica con los parámetros de q, latitud y longitud
 
 ```sh
 localhost:3000/api/v1/cities/search?q=Ma&latitude=45.43338&longitude=-73.16585
@@ -106,7 +106,7 @@ Respuesta
 }
 ```
 
-## Si no hay resultados de la búsqueda el endpoint regresar un array vacío
+### Si no hay resultados de la búsqueda el endpoint regresar un array vacío
 ```sh
 localhost:3000/api/v1/cities/search?q=Mixtla
 ```
@@ -117,7 +117,7 @@ Respuesta
 }
 ```
 
-## Si no se envía el parámetro “q” en la URL recibes un respuesta con un mensaje de error
+### Si no se envía el parámetro “q” en la URL recibes un respuesta con un mensaje de error
 
 Respuesta 
 
