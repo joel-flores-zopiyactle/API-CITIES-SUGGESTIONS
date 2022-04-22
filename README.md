@@ -88,6 +88,8 @@ Respuesta
 
 ### Endpoint final para una búsqueda más específica con los parámetros de q, latitud y longitud
 
+En este endpoint los parámetros como latitud y longitud buscará una ciudad con las coordenadas exactas que se pasan como valor en los parámetros y si hay resultados regresara la ciudad encontrada y si no regresa un array vacío.
+
 ```sh
 localhost:3000/api/v1/cities/search?q=Ma&latitude=45.43338&longitude=-73.16585
 ```
